@@ -1,0 +1,69 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+li, a, button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:rgb(223, 224, 226);
+    text-decoration: none;
+ }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color:rgb(34, 42, 43);
+}   
+.logo{
+    cursor: pointer; 
+    width: 150px; 
+    height: 100px; 
+} 
+.nav__link{
+    list-style: none;
+}
+.nav__link li{
+    display: inline-block;
+    padding: 0px 20px;    
+}
+.nav__link li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__link li a:hover{
+    color:rgb(5, 107, 107)
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgb(10, 65, 79);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 80;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}

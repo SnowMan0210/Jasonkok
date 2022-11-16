@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Info2.css" >
+</head>
+<body>
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-ellie-burgin-4721437.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-jachen-dorta-792167.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\View-of-primary-forest.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 /6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-burak-the-weekender-3778040.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-elina-sazonova-4403960.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\turtle1.jpg" style="width:100%" >
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-ellie-burgin-4721437.jpg" style="width:100%" onclick="currentSlide(1)" alt="Animals shall live in peace">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-jachen-dorta-792167.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lesser extreme weather">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\View-of-primary-forest.png" style="width:100%" onclick="currentSlide(3)" alt="Rainforest is sustainable">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-burak-the-weekender-3778040.jpg" style="width:100%" onclick="currentSlide(4)" alt="Season will proceed accordingly">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-elina-sazonova-4403960.jpg" style="width:100%" onclick="currentSlide(5)" alt="Habitats are available for species">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\turtle1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sea creature are undisturbed">
+          </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+ showSlides(slideIndex);
+
+ function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+ function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</body>
+</html>

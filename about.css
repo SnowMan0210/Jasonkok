@@ -1,0 +1,150 @@
+@charset "utf-8";
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    position: absolute;
+    background-color: rgb(63, 72, 78);
+    width: 100%;
+    color:azure;
+}
+footer{
+    height: 10vh;
+    bottom:0%;
+}
+footer h2{
+    position: absolute;
+    left:45%;
+}
+footer p{
+    position: absolute;
+    left: 48%;
+    bottom: 20px;
+    color:rgb(255, 255, 255);
+}
+body{
+    background-image: url(pexels-photo-691668.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0,75),rgb(0,0,0,0,75));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar img {
+    width: 170px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.navbar{
+    width: 20%;
+    padding: 20%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(68, 48, 48);
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(30, 50, 50);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:azure;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid #009688;
+    background: transparent;
+    color:aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1; 
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover{
+    width: 700px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.box{
+    margin: 10px;
+    width: 400px;
+    height: 400px; 
+    box-shadow: -3px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    color: aliceblue;
+}
+.box img{
+    width: 300px;
+    height: 250px; 
+    align-items: center;
+} 
+

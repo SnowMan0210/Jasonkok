@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header>
+    <img class="logo"  src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\logo2.png.png" alt="logo">
+    <nav>
+         <ul class="nav__link">
+            <li><a href="NA.html">Home</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="Sign In.html">Sign In</a> </li>
+         </ul>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-frederik-srensen-2787469.jpg"></div>
+          <div class="swiper-slide"><img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\0.31737700_1635249252_climate-change23.jpg"></div>
+          <div class="swiper-slide"><img src="C:\Users\ASUS\Desktop\KokShenYew - Copy\Assignment Web\pexels-pixabay-221012.jpg"></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> 
+      </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableoninteraction: false,
+    },
+  loop: true,
+
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+</script>
+</body>
+</html>
